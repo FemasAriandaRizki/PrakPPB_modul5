@@ -1,6 +1,6 @@
 // components/CardFollower.js
 import React from "react";
-import "./CardFollower.css";
+import "./CardProfile.css";
 
 export default function CardFollower({ name, followers, avatar, profileLink }) {
     return (

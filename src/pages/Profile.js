@@ -1,6 +1,6 @@
 // Profile.js
 import React, { useState, useEffect } from "react";
-import CardFollower from "../components/CardFollower";
+import CardFollower from "../components/CardProfile";
 import "./Profile.css";
 
 export default function Profile() {

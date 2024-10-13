@@ -1,10 +1,16 @@
-import React from "react";
-import { BrowserRouter, Routes, Route, NavLink } from "react-router-dom";
+import {
+    BrowserRouter,
+    Routes,
+    Route,
+    Navigate,
+    NavLink,
+} from "react-router-dom";
 import { HiHome } from "react-icons/hi";
 import { MdGroup } from "react-icons/md";
 import "./App.css";
 import Movie from "./pages/Movie";
 import Profile from "./pages/Profile";
+
 function App() {
     return (
         <BrowserRouter>
@@ -12,6 +18,7 @@ function App() {
                 <p id="titleGroup">Kelompok 28</p>
             </header>
             <Routes>
+                <Route path="/" element={<Navigate to="/movie" replace />} />
                 <Route path="/movie" element={<Movie />} />
                 <Route path="/profile" element={<Profile />} />
             </Routes>
